@@ -14,5 +14,5 @@
 
 - Resource estimation scripts for:
   - Qubit count, gate count, circuit depth, T-count, T-depth
-  - Benchmarking attack costs under Grover’s algorithm (for symmetric ciphers and hash functions) and Shor’s algorithm (for ECC)
+  - Benchmarking attack costs under Grover’s algorithm for symmetric ciphers and hash functions and Shor’s algorithm for ECC
 
