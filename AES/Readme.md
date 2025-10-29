@@ -283,23 +283,24 @@
   - AND gate decomposition: 11 Clifford gates, 4 T gates, T-depth of 1, full depth of 8, 1 ancilla qubit
   - AND gate dagger decomposition: 5 Clifford gates, 1 Measurement gate, full depth of 4
   
+<!-- Paste into README.md -->
 <table>
   <tr>
     <th>AES</th>
-    <th>Version</th>
-    <th>Used S-box</th>
+    <th>Type</th>
+    <th>Description</th>
     <th>#CNOT</th>
     <th>#1qCliff</th>
     <th>#T</th>
     <th>#Measure</th>
     <th>T-depth</th>
-    <th>#qubit </th>
+    <th>#qubit (M)</th>
     <th>Full depth</th>
   </tr>
   <tr>
     <td rowspan="9">128</td>
     <td>Regular</td>
-    <td rowspan="5">Toffoli depth 4 S-box (low qubit count)</td>
+    <td rowspan="3">Toffoli depth 4 S-box (low qubit count)</td>
     <td>134,124</td>
     <td>43,896</td>
     <td>27,200</td>
@@ -579,4 +580,5 @@
     <td>865</td>
   </tr>
 </table>
+
 
