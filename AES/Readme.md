@@ -277,6 +277,7 @@
 </table>
 
 <!-- spacer: reset list context -->
+
 - AND gate version
   - AND gate decomposition: 11 Clifford gates, 4 T gates, T-depth of 1, full depth of 8, 1 ancilla qubit
   - AND gate dagger decomposition: 5 Clifford gates, 1 Measurement gate, full depth of 4
