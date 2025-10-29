@@ -1,4 +1,14 @@
-<!-- Paste this into README.md -->
+# Quantum Circuits for AES family
+
+## Overview
+
+**CAQC** is an open-source project that provides quantum circuit implementations for a variety of cryptographic algorithms, including AES, SHA-2, SHA-3, and binary ECC. This project benchmarks the quantum resources required to attack these cryptosystems using Grover’s and Shor’s algorithms (resp. for symmetric key and asymmetric key cryptography). The goal is to provide reproducible resource estimation results for the quantum cryptanalysis and post-quantum security research community. All the code is written in the ProjectQ quantum programming framework using the Python language.
+
+## Quantum Resources for AES quantum circuits
+
+- Toffoli gate version
+  - Toffoli gate decomposition: 8 Clifford gates, 7 T gates, T-depth of 4, full depth of 8
+
 <table>
   <tr>
     <th>AES</th>
@@ -268,8 +278,10 @@
   </tr>
 </table>
 
-<!-- Paste into README.md -->
-<table>
+- AND gate version
+  - AND gate decomposition: 11 Clifford gates, 4 T gates, T-depth of 1, full depth of 8, 1 ancilla qubit
+  - AND gate dagger decomposition: 5 Clifford gates, 1 Measurement gate, full depth of 4
+  <table>
   <tr>
     <th>AES</th>
     <th>Type</th>
