@@ -7,6 +7,8 @@
 - AND gate version
   - AND gate decomposition: 11 Clifford gates, 4 T gates, T-depth of 1, full depth of 8, 1 ancilla qubit
   - AND gate dagger decomposition: 5 Clifford gates, 1 Measurement gate, full depth of 4
+ 
+ <!--table block-->
   <table>
   <tr>
     <th>AES</th>
@@ -275,8 +277,8 @@
     <td>907</td>
   </tr>
 </table>
+<!--/table block-->
 
-<!-- spacer: reset list context -->
 <br>
 
 - AND gate version
