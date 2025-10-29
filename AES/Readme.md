@@ -1,30 +1,269 @@
-
-| AES | Type | Description | #CNOT | #1qCliff | #T | T-depth | #qubit | Full depth |
-|------:|:-------------|:----------------------------------------|--------:|-----------:|-------:|----------:|---------:|-------------:|
-| 128 | Regular | Toffoli depth 4 S-box (low qubit count) | 148244 | 14416 | 87560 | 304 | 2736 | 1288 |
-|  | Shallow |  | 150064 | 19264 | 87104 | 160 | 3048 | 776 |
-|  | Shallow/low |  | 153772 | 19264 | 87104 | 160 | 4200 | 748 |
-|  | Regular | Toffoli depth 4 S-box (low full depth) | 138144 | 15496 | 87920 | 304 | 2896 | 1090 |
-|  | Shallow |  | 139588 | 19168 | 86912 | 160 | 3268 | 686 |
-|  | Shallow/low |  | 143296 | 19168 | 86912 | 160 | 4420 | 667 |
-|  | Regular | Toffoli depth 3 S-box | 298320 | 40496 | 207480 | 228 | 4256 | 1069 |
-|  | Shallow |  | 297788 | 39168 | 206472 | 120 | 6128 | 665 |
-|  | Shallow/low |  | 301496 | 39168 | 206472 | 120 | 7280 | 639 |
-| 192 | Regular | Toffoli depth 4 S-box (low qubit count) | 171724 | 16448 | 101288 | 304 | 3252 | 1494 |
-|  | Shallow |  | 173600 | 21904 | 100736 | 160 | 3648 | 872 |
-|  | Shallow/low |  | 177452 | 21904 | 100736 | 160 | 4800 | 844 |
-|  | Regular | Toffoli depth 4 S-box (low full depth) | 159864 | 17512 | 101824 | 304 | 3412 | 1236 |
-|  | Shallow |  | 161308 | 21808 | 100816 | 160 | 3804 | 816 |
-|  | Shallow/low |  | 165016 | 21808 | 100816 | 160 | 4956 | 791 |
-|  | Regular | Toffoli depth 3 S-box | 343032 | 46672 | 238920 | 228 | 5032 | 1201 |
-|  | Shallow |  | 342500 | 44864 | 238176 | 120 | 7040 | 751 |
-|  | Shallow/low |  | 346352 | 44864 | 238176 | 120 | 8192 | 726 |
-| 256 | Regular | Toffoli depth 4 S-box (low qubit count) | 195204 | 18480 | 115016 | 304 | 3768 | 1700 |
-|  | Shallow |  | 197136 | 24544 | 114368 | 160 | 4248 | 968 |
-|  | Shallow/low |  | 201132 | 24544 | 114368 | 160 | 5400 | 940 |
-|  | Regular | Toffoli depth 4 S-box (low full depth) | 181584 | 19528 | 115728 | 304 | 3928 | 1382 |
-|  | Shallow |  | 183028 | 24448 | 114720 | 160 | 4404 | 902 |
-|  | Shallow/low |  | 187024 | 24448 | 114720 | 160 | 5556 | 874 |
-|  | Regular | Toffoli depth 3 S-box | 387744 | 52848 | 270360 | 228 | 5808 | 1333 |
-|  | Shallow |  | 387212 | 50560 | 269880 | 120 | 7952 | 841 |
-|  | Shallow/low |  | 391208 | 50560 | 269880 | 120 | 9104 | 816 |
+<!-- Paste this into README.md -->
+<table>
+  <tr>
+    <th>AES</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>#CNOT</th>
+    <th>#1qCliff</th>
+    <th>#T</th>
+    <th>T-depth</th>
+    <th>#qubit</th>
+    <th>Full depth</th>
+  </tr>
+  <tr>
+    <td rowspan="9">128</td>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 4 S-box (low qubit count)</td>
+    <td>148,244</td>
+    <td>14,416</td>
+    <td>87,560</td>
+    <td>304</td>
+    <td>2,736</td>
+    <td>1,288</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>150,064</td>
+    <td>19,264</td>
+    <td>87,104</td>
+    <td>160</td>
+    <td>3,048</td>
+    <td>776</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>153,772</td>
+    <td>19,264</td>
+    <td>87,104</td>
+    <td>160</td>
+    <td>4,200</td>
+    <td>748</td>
+  </tr>
+  <tr>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 4 S-box (low full depth)</td>
+    <td>138,144</td>
+    <td>15,496</td>
+    <td>87,920</td>
+    <td>304</td>
+    <td>2,896</td>
+    <td>1,090</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>139,588</td>
+    <td>19,168</td>
+    <td>86,912</td>
+    <td>160</td>
+    <td>3,268</td>
+    <td>686</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>143,296</td>
+    <td>19,168</td>
+    <td>86,912</td>
+    <td>160</td>
+    <td>4,420</td>
+    <td>667</td>
+  </tr>
+  <tr>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 3 S-box</td>
+    <td>298,320</td>
+    <td>40,496</td>
+    <td>207,480</td>
+    <td>228</td>
+    <td>4,256</td>
+    <td>1,069</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>297,788</td>
+    <td>39,168</td>
+    <td>206,472</td>
+    <td>120</td>
+    <td>6,128</td>
+    <td>665</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>301,496</td>
+    <td>39,168</td>
+    <td>206,472</td>
+    <td>120</td>
+    <td>7,280</td>
+    <td>647</td>
+  </tr>
+  <tr>
+    <td rowspan="9">192</td>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 4 S-box (low qubit count)</td>
+    <td>167,508</td>
+    <td>16,136</td>
+    <td>98,600</td>
+    <td>368</td>
+    <td>3,056</td>
+    <td>1,534</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>170,804</td>
+    <td>21,568</td>
+    <td>99,008</td>
+    <td>192</td>
+    <td>3,368</td>
+    <td>932</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>175,336</td>
+    <td>21,568</td>
+    <td>99,008</td>
+    <td>192</td>
+    <td>6</td>
+    <td>900</td>
+  </tr>
+  <tr>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 4 S-box (low full depth)</td>
+    <td>156,136</td>
+    <td>173,496</td>
+    <td>99,008</td>
+    <td>368</td>
+    <td>3,216</td>
+    <td>1,294</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>157,620</td>
+    <td>21,272</td>
+    <td>98,000</td>
+    <td>192</td>
+    <td>3,588</td>
+    <td>819</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>162,152</td>
+    <td>21,272</td>
+    <td>98,000</td>
+    <td>192</td>
+    <td>4,996</td>
+    <td>797</td>
+  </tr>
+  <tr>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 3 S-box</td>
+    <td>336,568</td>
+    <td>43,192</td>
+    <td>233,688</td>
+    <td>276</td>
+    <td>4,576</td>
+    <td>1,270</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>336,252</td>
+    <td>43,864</td>
+    <td>232,680</td>
+    <td>144</td>
+    <td>6,448</td>
+    <td>795</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>340,784</td>
+    <td>43,864</td>
+    <td>232,680</td>
+    <td>144</td>
+    <td>7,856</td>
+    <td>773</td>
+  </tr>
+  <tr>
+    <td rowspan="9">256</td>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 4 S-box (low qubit count)</td>
+    <td>207,364</td>
+    <td>19,879</td>
+    <td>122,520</td>
+    <td>432</td>
+    <td>3,376</td>
+    <td>1,798</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>208,320</td>
+    <td>26,703</td>
+    <td>121,944</td>
+    <td>224</td>
+    <td>3,688</td>
+    <td>1,086</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>213,676</td>
+    <td>240,379</td>
+    <td>121,944</td>
+    <td>224</td>
+    <td>5,352</td>
+    <td>1,047</td>
+  </tr>
+  <tr>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 4 S-box (low full depth)</td>
+    <td>193,236</td>
+    <td>21,415</td>
+    <td>123,032</td>
+    <td>432</td>
+    <td>3,536</td>
+    <td>1,516</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>193,936</td>
+    <td>26,607</td>
+    <td>122,024</td>
+    <td>224</td>
+    <td>3,908</td>
+    <td>960</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>199,292</td>
+    <td>26,607</td>
+    <td>122,024</td>
+    <td>224</td>
+    <td>5,572</td>
+    <td>934</td>
+  </tr>
+  <tr>
+    <td>Regular</td>
+    <td rowspan="3">Toffoli depth 3 S-box</td>
+    <td>417,556</td>
+    <td>53,383</td>
+    <td>290,472</td>
+    <td>324</td>
+    <td>4,896</td>
+    <td>1,488</td>
+  </tr>
+  <tr>
+    <td>Shallow</td>
+    <td>416,444</td>
+    <td>53,983</td>
+    <td>289,212</td>
+    <td>168</td>
+    <td>6,768</td>
+    <td>933</td>
+  </tr>
+  <tr>
+    <td>Shallow/low</td>
+    <td>421,800</td>
+    <td>53,983</td>
+    <td>289,212</td>
+    <td>168</td>
+    <td>8,432</td>
+    <td>907</td>
+  </tr>
+</table>
