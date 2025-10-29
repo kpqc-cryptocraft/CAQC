@@ -299,7 +299,7 @@
   <tr>
     <td rowspan="9">128</td>
     <td>Regular</td>
-    <td rowspan="3">Toffoli depth 4 S-box (low qubit count)</td>
+    <td rowspan="5">Toffoli depth 4 S-box (low qubit count)</td>
     <td>134,124</td>
     <td>43,896</td>
     <td>27,200</td>
