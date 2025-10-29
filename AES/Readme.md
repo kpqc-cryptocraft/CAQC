@@ -287,14 +287,14 @@
 <table>
   <tr>
     <th>AES</th>
-    <th>Type</th>
-    <th>Description</th>
+    <th>Version</th>
+    <th>Used S-box</th>
     <th>#CNOT</th>
     <th>#1qCliff</th>
     <th>#T</th>
     <th>#Measure</th>
     <th>T-depth</th>
-    <th>#qubit (M)</th>
+    <th>#qubit</th>
     <th>Full depth</th>
   </tr>
   <tr>
