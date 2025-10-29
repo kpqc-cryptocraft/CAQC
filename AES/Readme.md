@@ -277,6 +277,7 @@
 </table>
 
 <!-- spacer: reset list context -->
+<br>
 
 - AND gate version
   - AND gate decomposition: 11 Clifford gates, 4 T gates, T-depth of 1, full depth of 8, 1 ancilla qubit
