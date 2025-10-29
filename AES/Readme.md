@@ -1,4 +1,4 @@
-# Quantum Circuits for AES family
+# Quantum Circuits for AES
 
 ## Quantum Resources for AES quantum circuits
 
