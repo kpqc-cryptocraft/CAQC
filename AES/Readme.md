@@ -274,7 +274,7 @@
     <td>8,432</td>
     <td>907</td>
   </tr>
-<!-- </table> -->
+</table>
 
 <!-- spacer: reset list context -->
 <br>
